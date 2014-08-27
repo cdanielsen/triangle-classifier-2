@@ -7,12 +7,16 @@ function TriangleClassifier(side1, side2, side3){
   var long_leg = sorted_sides[1];
   var hypotenuse = sorted_sides[2];
 
-  if (short_leg + long_leg < hypotenuse)
+  if (short_leg + long_leg < hypotenuse) {
     return("impossible");
-  else if (short_leg == long_leg && short_leg == hypotenuse)
+  }
+  else if (short_leg == long_leg && short_leg == hypotenuse) {
     return("equilateral");
-  else if (short_leg == long_leg || long_leg == hypotenuse)
+  }
+  else if (short_leg == long_leg || long_leg == hypotenuse) {
     return("isosceles");
-  else
+  }
+  else {
     return("scalene");
+  }
 };
