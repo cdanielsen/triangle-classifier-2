@@ -8,5 +8,8 @@ describe("TriangleClassifier", function(){
   });
   it("classifies a triangle as equilateral if all three of its given sides are equal", function(){
     TriangleClassifier(4,4,4).should.equal("equilateral");
-  })
+  });
+  it("classifies a triangle as scalene if it is not impossible, equilateral, or isosceles", function(){
+    TriangleClassifier(4,7,9).should.equal("scalene");
+  });
 });

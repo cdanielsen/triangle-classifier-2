@@ -13,4 +13,6 @@ function TriangleClassifier(side1, side2, side3){
     return("equilateral");
   else if (short_leg == long_leg || long_leg == hypotenuse)
     return("isosceles");
+  else
+    return("scalene");
 };
