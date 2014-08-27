@@ -6,4 +6,7 @@ describe("TriangleClassifier", function(){
   it("classifies a triangle as isosceles if exactly two of its given lengths are equal", function(){
     TriangleClassifier(3,6,6).should.equal("isosceles");
   });
+  it("classifies a triangle as equilateral if all three of its given sides are equal", function(){
+    TriangleClassifier(4,4,4).should.equal("equilateral");
+  })
 });

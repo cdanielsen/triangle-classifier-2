@@ -9,6 +9,8 @@ function TriangleClassifier(side1, side2, side3){
 
   if (short_leg + long_leg < hypotenuse)
     return("impossible");
+  else if (short_leg == long_leg && short_leg == hypotenuse)
+    return("equilateral");
   else if (short_leg == long_leg || long_leg == hypotenuse)
     return("isosceles");
 };
