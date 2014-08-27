@@ -20,3 +20,15 @@ function TriangleClassifier(side1, side2, side3){
     return("scalene");
   }
 };
+
+$(document).ready(function(){
+  $("form.user_input").submit(function(event){
+    event.preventDefault();
+    var side1 = parseInt($("#side1").val());
+    var side2 = parseInt($("#side2").val());
+    var side3 = parseInt($("#side3").val());
+    var output = TriangleClassifier(side1, side2, side3);
+
+    $("#classification").text(output);
+  });
+});
