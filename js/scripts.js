@@ -37,5 +37,6 @@ $(document).ready(function(){
     }
 
     $("#classification").text(output);
+    $("#result").show();
   });
 });
