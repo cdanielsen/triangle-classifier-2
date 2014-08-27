@@ -29,6 +29,13 @@ $(document).ready(function(){
     var side3 = parseInt($("#side3").val());
     var output = TriangleClassifier(side1, side2, side3);
 
+    if (output === "scalene") {
+      $("#grammar").text("a");
+    }
+    else {
+      $("#grammar").text("an");
+    }
+
     $("#classification").text(output);
   });
 });
